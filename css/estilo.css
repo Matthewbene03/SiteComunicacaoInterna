@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e7efe1;
+    height: 100%;
+}
+
+.paginaPrincipal{
+    display: grid;
+    grid-template-areas: 'texto img';
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-content: center;
+
+    margin: 10%;
+    height: 600px;
+    text-align: center;
+}
+
+.texto{
+    grid-area: texto;
+    padding-top: 100px;
+}
+
+.texto h2{
+    font-size: 30px;
+    font-family: "Outfit", sans-serif;
+    margin: 10px;
+}
+
+.nomePessoa{
+    color: black;
+    font-size: 60px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+}
+
+.colorGreen{
+    color: #1fc667;
+}
+
+
+.img{
+    grid-area: img;
+    background-color: white;
+    height: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.img img{
+    margin-top: 20px;
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.historico{
+    border-top: 5px double #1fc667;
+    border-bottom: 5px double #1fc667;
+    display: grid;
+    grid-template-areas: 'historico informacoes';
+    grid-template-columns: 50% 50%;
+
+    height: 600px;
+    margin: 10%;
+    padding: 50px;
+}
+
+.texto2{
+    grid-area: historico;
+    margin-left: 10%;
+}
+
+.texto2 h2{
+    font-size: 50px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.informacoes{
+    grid-area: informacoes;
+
+    display: grid;
+    grid-template-areas: 'mora'
+                         'trabalho'
+                         'funcoes';
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.cidadeMoradia{
+    grid-area: mora;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.cidadeMoradia h3{
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 35px;
+    font-family: "Archivo Black", sans-serif;    
+}
+
+.cidadeMoradia p{
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+}
+
+.trabalho{
+    grid-area: trabalho;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.trabalho h3{
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 35px;
+    font-family: "Archivo Black", sans-serif;    
+}
+
+.trabalho p{
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+}
+
+.funcoes{
+    grid-area: funcoes;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.funcoes h3{
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 35px;
+    font-family: "Archivo Black", sans-serif;    
+}
+
+.funcoes p{
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+}
+
+.curiosidades{
+    display: grid;
+    grid-template-areas: 'texto info';
+    grid-template-columns: 50% 50%;
+
+    background-color: #1fc667;
+    height: 600px;
+    margin: 10%;
+}
+
+.texto3{
+    grid-area: texto;
+    margin-left: 10%;
+}
+
+.texto3 h2{
+    font-size: 50px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.informacoes_c{
+    grid-area: info;
+
+    display: grid;
+    grid-template-areas: 'F'
+                         'B'
+                         'M';
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.freelancer{
+    grid-area: F;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.freelancer h3{
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 35px;
+    font-family: "Archivo Black", sans-serif;    
+}
+
+.freelancer p{
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+}
+
+.blog{
+    grid-area: B;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.blog h3{
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 35px;
+    font-family: "Archivo Black", sans-serif;    
+}
+
+.blog p{
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+}
+
+.materiais{
+    grid-area: M;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.materiais h3{
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 35px;
+    font-family: "Archivo Black", sans-serif;    
+}
+
+.materiais p{
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+}
+
+.coisasAmo{
+    display: grid;
+    grid-template-areas: 'info1 info2 info3'
+                         'info1 info2 info3'
+                         'info4 info2 info3'
+                         'info4 info5 info5';
+
+    height: 700px;
+    margin: 10%;
+    border: 5px double #1fc667;
+}
+
+.info1{
+    grid-area: info1;
+}
+
+.info1 h2{
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 50px;
+    line-height: 15px;
+    font-family: "Archivo Black", sans-serif;   
+}
+
+.info2{
+    grid-area: info2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plantasNaSala{
+    height: 50%;
+    width: 70%;
+    border: 3px solid #537f05;
+    border-radius: 15px;
+}
+
+.info3{
+    grid-area: info3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#livros{
+    height: 50%;
+    width: 50%;
+    border: 3px solid #c0c3cd;
+    border-radius: 15px;
+}
+
+.info4{
+    grid-area: info4;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nintendo{
+    height: 60%;
+    border: 3px solid #b63d1e;
+    border-radius: 15px;
+}
+
+.info5{
+    grid-area: info5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.info5 h3{
+    text-align: center;
+    margin-left: 15px;
+    font-size: 25px;
+    font-family: "Archivo Black", sans-serif;   
+}
+
+.pagFinal{
+    display: grid;
+    grid-template-areas: 'colu1 colu2';
+
+    height: 600px;
+    background-color: #1fc667;
+}
+
+.colu1{
+    grid-area: colu1;
+}
+
+.colu1 h3{
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: "Outfit", sans-serif;
+}
+
+.colu1 h2{
+    font-size: 50px;
+    margin-left: 50px;
+    font-family: "Archivo Black", sans-serif;   
+
+}
+
+.colu2{
+    grid-area: colu2;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.colu2 h3{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+    margin-top: 10px;
+}
